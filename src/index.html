@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      http-equiv="content-security-policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <label>
+        Text Color:
+        <input type="color" id="textColorPicker" value="#000000" />
+      </label>
+      <label>
+        Background Color:
+        <input type="color" id="bgColorPicker" value="#ffffff" />
+      </label>
+      <label>
+        Transparency:
+        <input type="range" id="bgTransparency" min="0" max="100" value="100" />
+      </label>
+      <button class="close-btn no-drag">✕</button>
+    </div>
+
+    <textarea
+      id="rootTextArea"
+      placeholder="Paste your text here..."
+    ></textarea>
+
+    <script src="./utils/guiController.js"></script>
+    <script src="./utils/renderer.js"></script>
+  </body>
+</html>
