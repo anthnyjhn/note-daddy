@@ -7,10 +7,11 @@ function createWindow(randomNames = null) {
     let windowWidth = 800
     let windowHeight = 600
 
+    // Edit what you need here cuz
     const mainWindow = new BrowserWindow({
         width: windowWidth,
         height: windowHeight,
-        frame: false,
+        frame: true,
         transparent: true,
         hasShadow: false,
         alwaysOnTop: true,
