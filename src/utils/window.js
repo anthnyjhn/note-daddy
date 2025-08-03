@@ -11,12 +11,13 @@ function createWindow(randomNames = null) {
     const mainWindow = new BrowserWindow({
         width: windowWidth,
         height: windowHeight,
-        frame: true,
+        frame: false,
         transparent: true,
         hasShadow: false,
         alwaysOnTop: true,
         skipTaskbar: true,
         hiddenInMissionControl: true,
+        titleBarStyle: 'hidden',
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,

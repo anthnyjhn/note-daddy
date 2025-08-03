@@ -90,6 +90,11 @@ body {
   padding: 8px;
   backdrop-filter: blur(10px);
   -webkit-app-region: drag;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 input {
@@ -98,6 +103,7 @@ input {
 
 label {
   color: var(--text-color);
+  display: block;
 }
 
 textarea {
